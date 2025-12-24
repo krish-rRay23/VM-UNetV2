@@ -1,0 +1,2 @@
+# Convergence
+Smooth convergence observed.
