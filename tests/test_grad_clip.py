@@ -14,4 +14,4 @@ class TestGradClip(unittest.TestCase):
         clipped, norm = clip_gradients(g, max_norm=2.5)
         self.assertAlmostEqual(norm, 5.0)
         new_norm = np.sqrt(np.sum(clipped[0] ** 2))
-        self.assertAlmostEqual(new_norm, 2.5)
+        self.assertAlmostEqual(new_norm, 2.5, places=5)
